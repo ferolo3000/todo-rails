@@ -57,6 +57,7 @@ $(document).on("turbolinks:load", function () {
   $('#create-task').on('submit', function(e) {
    e.preventDefault();
    createTask();
+   indexTasks();
  });
 
 
@@ -76,6 +77,7 @@ $(document).on("turbolinks:load", function () {
 
     $(document).on('click', '.delete', function() {
      deleteTask($(this).data('id'));
+     indexTasks();
    });
 
 
